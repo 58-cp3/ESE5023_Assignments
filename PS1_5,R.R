@@ -37,3 +37,5 @@ Find_expression <- function(x){
   print(sum)
 }
 Find_expression(58)
+
+# 5.2?
