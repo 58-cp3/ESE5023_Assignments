@@ -18,6 +18,24 @@ SZwind_data_tbl %>%
          #wind_Speed_new=as.numeric(wind_Speed_ne),
          wind_speedqc_new=ifelse(wind_speedqc=='3'|wind_speedqc=='7','NA',wind_speedqc)) %>% 
   select(Months,wind_speed_new)->SZ_windspeed
+
+# @MingYANG : 
+#  something wrong in your plot, try the following guide:
+#  (1)use "select" to substract "WND" and "DATE" after "SZwind_data_tbl" being defined
+#  (2)"mutate" means to create a new colum of data, if you want to select the qualified data %>%
+#     use "filter" and "substr" like :" filter(substr(WND,1,3)!="999") "
+#  (3) in that case, the code below can help you to select the qualified data:
+#a_Data%>% 
+#  select(WND,DATE) %>% 
+#  filter(substr(WND,1,3)!="999") %>% 
+#  filter(substr(WND,9,12)!="9999") %>% 
+#  filter(substr(WND,5,7)=="1,N")%>%
+#  filter(substr(WND,14,14)=="1")%>%
+#  mutate(Month=as.character(paste0(substr(DATE,1,4),"-",substr(DATE,6,7)))) %>%
+#  mutate(wind_speed=as.numeric(substr(WND,9,12)))%>%
+#  select(Month,wind_speed) %>% 
+#  the end
+
   SZ_windspeed %>%
     group_by(Months) %>% 
     summarise(Avearge_Months_windspeed=mean(wind_speed_new)) %>% 
