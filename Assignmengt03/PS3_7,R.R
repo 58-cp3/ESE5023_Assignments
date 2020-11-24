@@ -37,3 +37,5 @@ summary(model)
 #in january each year for 20 years.
 #tested with a simple linear regression model ,the  R-squared is  0.009298 
 # is far from 1,so the data does not have a clear linear relatonship.
+
+# good work 
