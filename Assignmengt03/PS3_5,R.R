@@ -31,13 +31,13 @@ summary(fit_new)
 abline(fit_new, lwd = 5, col = "black")
 coef(fit_new)
 age<-(fit_new$coefficients[2]*30.9/60/60/24/365)
-print(paste(" the age of the universe is£º",age,"years old"))
+print(paste(" the age of the universe isÂ£Âº",age,"years old"))
 ##5.3when the universe was first created,the matter was dense,
 # the relative speed is zero,so the velocity is zero,the intercept should be zero
 
 ##the slope represents the time for the universe to spread,
 # the slope is the age of the universe.
-#the age of the universe is£º 1.34524751530636e-09 years old
+#the age of the universe isÂ£Âº 1.34524751530636e-09 years old
 
 
 #5.4
@@ -45,4 +45,5 @@ print(paste(" the age of the universe is£º",age,"years old"))
 #we see that different Nlebula have the same Distance,so more accurate data of distance
 #will lead to more precise estimates of the regression coefficients.
 
+# good work
   
