@@ -24,3 +24,5 @@ abline(fit, lwd = 5, col = "yellow")
 coef(fit)
 
 ## the lapse rate is 9.31,that is close to 9.8
+
+# good work
