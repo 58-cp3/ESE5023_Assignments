@@ -27,3 +27,8 @@ plot(cpus_test$perf, cpus_predict)
 mean_bias<-(mean(cpus_predict) - mean(cpus_test$perf))/
   mean(cpus_test$perf)*100
 print(paste("the mean bias between predicted perf value and provided perf values is",mean_bias,"%"))
+
+# MingYANG noticed:
+# "the mean bias" is more likely to be the following:
+# unsing mean(test$perf - predict(model_1,test))
+# the end
