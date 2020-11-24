@@ -35,3 +35,4 @@ t.test(nonpre_v$zinc, pre_nonv$zinc)
 # I think no obvious evidence can prove that 
 # pregnant vegetarians tend to have lower zinc levels than pregnant nonvegetarians
 
+# good work
