@@ -29,3 +29,4 @@ summary(anova_one_way)
 #p-value is 1.01e-06 is very small,so the means are different for different bones,
 #the dataset support Tyrannosaurua Rex is not warm-blooded.
 
+# good work
