@@ -12,10 +12,12 @@ rainfall_data    <- read.csv(file = "rainfall.csv", header = T)
 rainfall_data_tbl <- as_tibble(rainfall_data)
 #boxplot
 boxplot(rainfall~cloud.seeding,data = rainfall_data_tbl)
-#ÓÐÔÆ²¥ÖÖµÄÌìÊý½µÓêµÄÖµÒª´óÒ»Ð©
+#æœ‰äº‘æ’­ç§çš„å¤©æ•°é™é›¨çš„å€¼è¦å¤§ä¸€äº›
 #1.2
 #one-way anova
 anova_one_way <- aov(rainfall ~ cloud.seeding, data = rainfall_data_tbl)
 summary(anova_one_way)
-#p-value is 0.0511,¿ÉÒÔÈÏÎªÔÚ0.05µÄÖÃÐÅË®Æ½ÏÂÎÞÃ÷ÏÔ²îÒì£¬
-#Èç¹ûÖÃÐÅË®Æ½Îª0.1£¬ÔòÈÏÎªÓÐ²îÒì
+#p-value is 0.0511,å¯ä»¥è®¤ä¸ºåœ¨0.05çš„ç½®ä¿¡æ°´å¹³ä¸‹æ— æ˜Žæ˜¾å·®å¼‚ï¼Œ
+#å¦‚æžœç½®ä¿¡æ°´å¹³ä¸º0.1ï¼Œåˆ™è®¤ä¸ºæœ‰å·®å¼‚
+
+# good work
