@@ -29,7 +29,7 @@ plot(temp_part_data)
 error_data<-temp_part_data$random
 Box.test(error_data,type='Ljung',lag=log(length(error_data)))
 #p_value is 1.175e-05
-#small than 0.05£¬so the error part follows a white noise distribution.
+#small than 0.05Â£Â¬so the error part follows a white noise distribution.
 
 #3.Fit an ARIMA(p,d,q) model 
 temp_ts_d<-diff(temp_ts_data)
@@ -61,4 +61,8 @@ forecast_2months$upper[2,1]
 forecast_2months$lower[2,2]
 forecast_2months$upper[2,2]
 
-
+# MingYANG noticed:
+# in 2.2, you didn`t check whether the error part follows a white noise distribution
+# in 2.3, you didn`t describe the fitting process in details in your report
+# in 2.4 you didn`t give the bias between predctions and actual observations
+# the end
