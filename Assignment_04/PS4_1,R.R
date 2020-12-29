@@ -103,3 +103,7 @@ title(main=paste("Long term (1800-2020) mean surface temperature in Jan."),
       cex.main=1,font.main=2)
 map('world',add=T,lwd=0.75,col="black")
 box(lwd=2)
+
+# MingYANG noticed:
+# the histogram is too simple, if you can plot longmen and huashan into one histogram, maybe you can obtain full point of 5
+# the end
