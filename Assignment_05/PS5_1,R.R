@@ -73,11 +73,12 @@ plot(srad_china1,  main="solar radiation in china", col=col)
 col <- terrain.colors(30)
 plot(wind_china1,  main="wind speed in china")
 contour(wind_china1, add=T, levels=seq(from=4, to=6, by=1),col="blue")
-#Î÷²Ø×ÔÖÎÇø¿ÉÒÔ×÷ÎªºÏÊÊµÄ·çÁ¦·¢µçÕ¾½¨ÉèµØµã¡£
+#è¥¿è—è‡ªæ²»åŒºå¯ä»¥ä½œä¸ºåˆé€‚çš„é£ŽåŠ›å‘ç”µç«™å»ºè®¾åœ°ç‚¹ã€‚
 
 # regions with relatively high solar radiation and low precipitation 
 plot(pre_china1,  main="precipitation in china", col=col)
 contour(pre_china1, add=T,levels=seq(from=0,to=20,by=10), col="red")
 plot(srad_china1,  main="solar radiation in china", col=col)
 contour(srad_china1, add=T,levels=seq(from=17000,to=18000,by=500), col="red")
-#½µË®½ÏµÍÇÒÌ«ÑôÄÜ·øÉä½Ï¸ßµÄÇøÓòÎªÎ÷²ØÄÏ²¿µØÇø£¬ÊÇºÏÊÊµÄPVÅ©³¡µØµã¡£
+#é™æ°´è¾ƒä½Žä¸”å¤ªé˜³èƒ½è¾å°„è¾ƒé«˜çš„åŒºåŸŸä¸ºè¥¿è—å—éƒ¨åœ°åŒºï¼Œæ˜¯åˆé€‚çš„PVå†œåœºåœ°ç‚¹ã€‚
+# good work
